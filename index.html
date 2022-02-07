@@ -6,9 +6,265 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fun weather</title>
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
 <body>
+
+    <header class="header">
+        <div class="container">
+            <div class="nav-block header__inner">
+                <div class="nav-block__logo">
+                    <a href="#">Fun weather.</a>
+                </div>
+                <nav class="nav-block__nav">
+                    <a class="nav-block__link nav-block__link--active" href="#">Home</a>
+                    <a class="nav-block__link" href="#">Features</a>
+                    <a class="nav-block__link" href="#">Reviews</a>
+                    <a class="nav-block__link" href="#">Download</a>
+                </nav>
+                <div class="nav-block__social">
+                    <a href="#"><img src="images/social/facebook.png" alt="facebook"></a>
+                    <a href="#"><img src="images/social/instagram.png" alt="instagram"></a>
+                    <a href="#"><img src="images/social/twitter.png" alt="twitter"></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="intro">
+        <div class="container">
+            <div class="intro__inner">
+                <div class="intro__description">
+                    <h1>Get the most fun weather app</h1>
+                    <p>Simple, nice and user-friendly application of the weather. Only useful information</p>
+                    <div class="intro__buttons">
+                        <button class="intro__btn1 button">Download</button>
+                        <button class="intro__btn2 button">Features</button>
+                    </div>
+                </div>
+                <div class="intro__preview">
+                    <div class="intro__circle-weather circle">Sunny</div>
+                    <div class="intro__circle-temperature circle">9°</div>
+                    <div class="intro__circle-town1 circle">London</div>
+                    <div class="intro__circle-town2 circle">Rio</div>
+                    <img class="intro__phone" src="images/phone.png" alt="Phone">
+                </div>
+            </div>
+            <button class="intro__btn-down circle">&#8735</button>
+        </div>
+        <div class="intro__wave">
+            <img src="images/wave1.png" alt="Wave">
+            <img src="images/wave2.png" alt="Wave">
+        </div>
+    </div>
+
+    <main class="main">
+        <div class="container">
+
+            <div class="title title1">
+                <h2 class="title__text">Perfect features</h2>
+                <p class="title__subtitle">Only necessary</p>
+            </div>
+
+            <div class="features">
+                <div class="advantage">
+                    <div class="advantage__img">
+                        <img src="images/usability.png" alt="icon">
+                    </div>
+                    <div class="advantage__text">
+                        <h3 class="advantage__title">Usability</h3>
+                        <p class="advantage__description">Sometimes the simplest things are the hardest to find. So we
+                            created a new line for everyday life</p>
+                    </div>
+                </div>
+                <div class="advantage">
+                    <div class="advantage__img">
+                        <img src="images/parallax.png" alt="icon">
+                    </div>
+                    <div class="advantage__text">
+                        <h3 class="advantage__title">Prallax Effect</h3>
+                        <p class="advantage__description">Sometimes the simplest things are the hardest to find. So we
+                            created a new line for everyday life</p>
+                    </div>
+                </div>
+                <div class="advantage">
+                    <div class="advantage__img">
+                        <img src="images/colors.png" alt="icon">
+                    </div>
+                    <div class="advantage__text">
+                        <h3 class="advantage__title">Unlimites colors</h3>
+                        <p class="advantage__description">Sometimes the simplest things are the hardest to find. So we
+                            created a new line for everyday life</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="title title2">
+                <h2 class="title__text">Simple widgets</h2>
+                <p class="title__subtitle">Drag and drop</p>
+            </div>
+
+            <div class="widgets">
+                <a class="widgets__arrow widgets__arrow--left" href="#">
+                    <img src="images/left arrow.png" alt="Left arrow">
+                </a>
+                <div class="widgets__card-block widgets__card-block--left">
+                    <div class="card left-grey-card">
+                        <div class="card__left-side">
+                            <div class="card__img">
+                                <img src="images/Cloudy.png" alt="Cloudy">
+                            </div>
+                            <span class="card__weather">Cloudy</span>
+                        </div>
+                        <div class="card__right-side">
+                            <span class="card__town">Moscow</span>
+                            <span class="card__country">Russia</span>
+                            <span class="card__temperature">-10°</span>
+                        </div>
+                    </div>
+                    <div class="card left-green-card">
+                        <div class="card__left-side">
+                            <div class="card__img">
+                                <img src="images/Sunny.png" alt="Sunny">
+                            </div>
+                            <span class="card__weather">Sunny</span>
+                        </div>
+                        <div class="card__right-side">
+                            <span class="card__town">Rio</span>
+                            <span class="card__country">Brazil</span>
+                            <span class="card__temperature">31°</span>
+                        </div>
+                    </div>
+                    <div class="card left-blue-card">
+                        <div class="card__left-side">
+                            <div class="card__img">
+                                <img src="images/Rainy.png" alt="Rainy">
+                            </div>
+                            <span class="card__weather">Rainy</span>
+                        </div>
+                        <div class="card__right-side">
+                            <span class="card__town">London</span>
+                            <span class="card__country">England</span>
+                            <span class="card__temperature">9°</span>
+                        </div>
+                    </div>
+                    <div class="card empty-card">
+                        <span class="card__add">+</span>
+                    </div>
+                    <span class="card-block__end">Add more widgets</span>
+                </div>
+                <div class="widgets__card-block widgets__card-block--central">
+                    <div class="card central-blue-card">
+                        <div class="card__left-side">
+                            <div class="card__img">
+                                <img src="images/Cloudy.png" alt="Cloudy">
+                            </div>
+                            <span class="card__weather">Cloudy</span>
+                        </div>
+                        <div class="card__right-side">
+                            <span class="card__town">Moscow</span>
+                            <span class="card__country">Russia</span>
+                            <span class="card__temperature">-10°</span>
+                        </div>
+                    </div>
+                    <div class="card central-red-card">
+                        <div class="card__left-side">
+                            <div class="card__img">
+                                <img src="images/Sunny.png" alt="Sunny">
+                            </div>
+                            <span class="card__weather">Sunny</span>
+                        </div>
+                        <div class="card__right-side">
+                            <span class="card__town">Rio</span>
+                            <span class="card__country">Brazil</span>
+                            <span class="card__temperature">31°</span>
+                        </div>
+                    </div>
+                    <div class="card central-grey-card">
+                        <div class="card__left-side">
+                            <div class="card__img">
+                                <img src="images/Rainy.png" alt="Rainy">
+                            </div>
+                            <span class="card__weather">Rainy</span>
+                        </div>
+                        <div class="card__right-side">
+                            <span class="card__town">London</span>
+                            <span class="card__country">England</span>
+                            <span class="card__temperature">9°</span>
+                        </div>
+                    </div>
+                    <div class="card empty-card">
+                        <span class="card__add">+</span>
+                    </div>
+                    <span class="card-block__end">Add more widgets</span>
+                </div>
+                <div class="widgets__card-block widgets__card-block--right">
+                    <div class="card right-purple-card">
+                        <div class="card__left-side">
+                            <div class="card__img">
+                                <img src="images/Cloudy.png" alt="Cloudy">
+                            </div>
+                            <span class="card__weather">Cloudy</span>
+                        </div>
+                        <div class="card__right-side">
+                            <span class="card__town">Moscow</span>
+                            <span class="card__country">Russia</span>
+                            <span class="card__temperature">-10°</span>
+                        </div>
+                    </div>
+                    <div class="card right-yellow-card">
+                        <div class="card__left-side">
+                            <div class="card__img">
+                                <img src="images/Sunny.png" alt="Sunny">
+                            </div>
+                            <span class="card__weather">Sunny</span>
+                        </div>
+                        <div class="card__right-side">
+                            <span class="card__town">Rio</span>
+                            <span class="card__country">Brazil</span>
+                            <span class="card__temperature">31°</span>
+                        </div>
+                    </div>
+                    <div class="card right-red-card">
+                        <div class="card__left-side">
+                            <div class="card__img">
+                                <img src="images/Rainy.png" alt="Rainy">
+                            </div>
+                            <span class="card__weather">Rainy</span>
+                        </div>
+                        <div class="card__right-side">
+                            <span class="card__town">London</span>
+                            <span class="card__country">England</span>
+                            <span class="card__temperature">9°</span>
+                        </div>
+                    </div>
+                    <div class="card empty-card">
+                        <span class="card__add">+</span>
+                    </div>
+                    <span class="card-block__end">Add more widgets</span>
+                </div>
+                <a class="widgets__arrow widgets__arrow--right" href="#">
+                    <img src="images/right arrow.png" alt="Right arrow">
+                </a>
+            </div>
+
+            <div class="title title3">
+                <h2 class="title__text">Screenshots</h2>
+                <p class="title__subtitle">The brightest images</p>
+            </div>
+
+
+
+
+
+        </div>
+    </main>
+
+    <footer class="footer">
+
+    </footer>
 
 </body>
 
