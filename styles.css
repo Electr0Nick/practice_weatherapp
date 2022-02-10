@@ -63,7 +63,7 @@ body {
 }
 .intro__inner {
     position: relative;
-    top: 100px;
+    top: 20vh;
     z-index: 7;
     display: flex;
 }
@@ -204,13 +204,16 @@ body {
     font-size: 1.125rem;
 }
 .title1 {
-    margin: 120px 0;
+    margin: 120px 0 90px;
 }
 .title2 {
-    margin: 180px 0 74px;
+    margin: 180px 0 70px;
 }
 .title3 {
-    margin: 120px 0 160px;
+    margin: 180px 0 140px;
+}
+.title4 {
+    margin: 120px 0 60px;
 }
 
 /*---------------MAIN features---------------*/
@@ -360,4 +363,221 @@ body {
 .card-block__end {
     color: #cbd4e3;
     font-size: 0.5rem;
+}
+
+/*---------------MAIN screenshots---------------*/
+.screenshots__block {
+    display: flex;
+    justify-content: space-between;
+    height: 550px;
+    margin-bottom: 270px;
+}
+.screenshots__block--right {
+    flex-direction: row-reverse;
+}
+.screen {
+    position: relative;
+    flex: 0 0 40%;
+    height: 100%;
+}
+.screen__temperature {
+    position: absolute;
+    top: 375px;
+    left: 24px;
+    z-index: 6;
+    width: 90px;
+    height: 90px;
+    color: #fff;
+    font-size: 1.81rem;
+    font-weight: bold;
+}
+.screen__temperature--blue {
+    background-color: #6ca3ff;
+}
+.screen__temperature--red {
+    background-color: #fc6a42;
+}
+.screen__temperature--grey {
+    background-color: #7693c8;
+}
+.screen__weather {
+    position: absolute;
+    top: 170px;
+    left: 325px;
+    z-index: 6;
+    width: 90px;
+    height: 90px;
+    color: #fff;
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+.screen__weather--yellow {
+    background-color: #fcec64;
+}
+.screen__weather--orange {
+    background-color: #f2a14e;
+}
+.screen__weather--lightblue {
+    background-color: #b8faee;
+}
+.screen__back-weather {
+    position: absolute;
+    top: 168px;
+    z-index: 4;
+    transform: rotate(90deg);
+    color: #f5f5f7;
+    font-size: 236px;
+    font-weight: 300;
+}
+.screen__back-weather--cloudy {
+    left: 24px;
+}
+.screen__back-weather--sunny {
+    left: 90px;
+}
+.screen__back-weather--rainy {
+    left: 120px;
+}
+.screen__img {
+    position: absolute;
+    left: 90px;
+    z-index: 5;
+}
+.descript {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 40px;
+    flex: 0 0 45%;
+    height: 100%;
+}
+.descript__icon {
+}
+.descript__title {
+    color: #648cff;
+    font-size: 2.25rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.descript__text {
+    font-size: 1.5rem;
+}
+.descript__circles {
+    display: flex;
+}
+.descript__circle {
+    width: 60px;
+    height: 60px;
+    margin-right: -12px;
+    background-color: #fff;
+    box-shadow: 0 0 12px 6px rgba(195, 207, 229, 0.1);
+    color: #c3cfe5;
+    text-transform: none;
+}
+.descript__circle--top {
+    z-index: 5;
+}
+.descript__circle--center {
+    z-index: 4;
+}
+.descript__circle--down {
+    z-index: 3;
+}
+
+/*---------------MAIN reviews---------------*/
+.rewiews-block {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 4%;
+    row-gap: 30px;
+}
+.rewiew {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    flex: 0 0 48%;
+}
+.rewiew__open {
+    color: #648cff;
+    font-size: 8.81rem;
+    margin-bottom: -100px;
+}
+.rewiew__text {
+    font-size: 1.5rem;
+}
+.rewiew__author {
+    font-size: 1.125rem;
+}
+.rewiew__close {
+    transform: rotate(180deg);
+    color: #648cff;
+    font-size: 8.81rem;
+    margin-top: -110px;
+}
+
+/*---------------------------------DOWNLOAD---------------------------------*/
+.download {
+    background-color: #648cff;
+}
+.download__inner {
+    display: flex;
+    height: 50vh;
+}
+.download__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 50px;
+    flex: 0 0 52%;
+}
+.download__title {
+    color: #fff;
+    font-size: 2.25rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.download__text {
+    width: 80%;
+    color: #fff;
+    font-size: 1.125rem;
+}
+.download__buttons {
+    display: flex;
+    column-gap: 10px;
+}
+.download__preview {
+    position: relative;
+    flex: 0 0 64%;
+    height: 100%;
+    overflow: hidden;
+}
+.download__img {
+}
+.download__img--front {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    z-index: 5;
+    transform: translateX(-50%);
+}
+.download__img--back-left {
+    position: absolute;
+    top: 32%;
+    left: 0;
+    z-index: 3;
+    margin: 0 10px;
+    filter: blur(5px);
+}
+.download__img--back-right {
+    position: absolute;
+    top: 32%;
+    right: 0;
+    z-index: 3;
+    margin: 0 10px;
+    filter: blur(5px);
+}
+
+/*---------------------------------FOOTER---------------------------------*/
+.footer {
+    min-height: 2000px;
 }
