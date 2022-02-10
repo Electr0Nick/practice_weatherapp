@@ -14,56 +14,65 @@
     <!-- -----------------------------------------------------------HEADER---------------------------------------------------------- -->
     <header class="header">
         <div class="container">
-            <div class="nav-block header__inner">
-                <div class="nav-block__logo">
-                    <a href="#">Fun weather.</a>
+            <div class="header__nav nav" id="top">
+                <div class="nav__logo">
+                    <a href="#"><span class="nav__logo-first-word">Fun</span> weather.</a>
                 </div>
-                <nav class="nav-block__nav">
-                    <a class="nav-block__link nav-block__link--active" href="#">Home</a>
-                    <a class="nav-block__link" href="#">Features</a>
-                    <a class="nav-block__link" href="#">Reviews</a>
-                    <a class="nav-block__link" href="#">Download</a>
+                <nav class="nav__block">
+                    <a class="nav__block-link nav__block-link_active" href="#">Home</a>
+                    <a class="nav__block-link" href="#">Features</a>
+                    <a class="nav__block-link" href="#">Reviews</a>
+                    <a class="nav__block-link" href="#">Download</a>
                 </nav>
-                <div class="nav-block__social">
-                    <a href="#"><img src="images/social/facebook.png" alt="facebook"></a>
-                    <a href="#"><img src="images/social/instagram.png" alt="instagram"></a>
-                    <a href="#"><img src="images/social/twitter.png" alt="twitter"></a>
+                <div class="nav__social">
+                    <a href="#" class="nav__social-img"><img src="images/social/facebook.png" alt="facebook"></a>
+                    <a href="#" class="nav__social-img"><img src="images/social/instagram.png" alt="instagram"></a>
+                    <a href="#" class="nav__social-img"><img src="images/social/twitter.png" alt="twitter"></a>
                 </div>
             </div>
         </div>
     </header>
     <!-- -----------------------------------------------------------INTRO----------------------------------------------------------- -->
     <div class="intro">
+        <div class="intro__background">
+            <div class="intro__wave">
+                <img src="images/wave1.png" alt="Wave">
+                <img src="images/wave2.png" alt="Wave">
+            </div>
+        </div>
         <div class="container">
-            <div class="intro__inner">
-                <div class="intro__description">
-                    <h1>Get the most fun weather app</h1>
-                    <p>Simple, nice and user-friendly application of the weather. Only useful information</p>
-                    <div class="intro__buttons">
-                        <button class="intro__btn1 button">Download</button>
-                        <button class="intro__btn2 button">Features</button>
+            <div class="intro__container">
+                <div class="intro__info">
+                    <h1 class="intro__info-title">Get the most fun weather app</h1>
+                    <p class="intro__info-text">Simple, nice and user-friendly application of the weather. Only useful
+                        information</p>
+                    <div class="intro__control">
+                        <button class="intro__button intro__button_red">Download</button>
+                        <button class="intro__button intro__button_blue">Features</button>
                     </div>
                 </div>
                 <div class="intro__preview">
-                    <div class="intro__circle-weather circle">Sunny</div>
-                    <div class="intro__circle-temperature circle">9°</div>
-                    <div class="intro__circle-town1 circle">London</div>
-                    <div class="intro__circle-town2 circle">Rio</div>
+                    <div class="intro__circle intro__circle_big intro__circle_red circle">Sunny</div>
+                    <div class="intro__circle intro__circle_small intro__circle_white circle">9°</div>
+                    <div class="intro__circle intro__circle_big intro__circle_blue circle">London</div>
+                    <div class="intro__circle intro__circle_small intro__circle_yellow circle">Rio</div>
                     <img class="intro__phone" src="images/phone.png" alt="Phone">
                 </div>
             </div>
-            <button class="intro__btn-down circle">&#8735</button>
-        </div>
-        <div class="intro__wave">
-            <img src="images/wave1.png" alt="Wave">
-            <img src="images/wave2.png" alt="Wave">
+            <div class="intro__end">
+                <button class="intro__circle intro__circle_button circle">&#8735</button>
+            </div>
         </div>
     </div>
+    <!-- -----------------------------------------------------------BUTTON-UP----------------------------------------------------------- -->
+    <a href="#top">
+        <div class="button-up"><img src="images/arrow.png" alt="arrow"></div>
+    </a>
     <!-- -----------------------------------------------------------MAIN----------------------------------------------------------- -->
     <main class="main">
         <div class="container">
             <!-- -----------------------------------------------------------MAIN title 1----------------------------------------------------------- -->
-            <div class="title title1">
+            <div class="title title_features">
                 <h2 class="title__text">Perfect features</h2>
                 <p class="title__subtitle">Only necessary</p>
             </div>
@@ -74,8 +83,8 @@
                         <img src="images/usability.png" alt="icon">
                     </div>
                     <div class="advantage__text">
-                        <h3 class="advantage__title">Usability</h3>
-                        <p class="advantage__description">Sometimes the simplest things are the hardest to find. So we
+                        <h3 class="advantage__text-title">Usability</h3>
+                        <p class="advantage__text-description">Sometimes the simplest things are the hardest to find. So we
                             created a new line for everyday life</p>
                     </div>
                 </div>
@@ -84,8 +93,8 @@
                         <img src="images/parallax.png" alt="icon">
                     </div>
                     <div class="advantage__text">
-                        <h3 class="advantage__title">Prallax Effect</h3>
-                        <p class="advantage__description">Sometimes the simplest things are the hardest to find. So we
+                        <h3 class="advantage__text-title">Prallax Effect</h3>
+                        <p class="advantage__text-description">Sometimes the simplest things are the hardest to find. So we
                             created a new line for everyday life</p>
                     </div>
                 </div>
@@ -94,14 +103,14 @@
                         <img src="images/colors.png" alt="icon">
                     </div>
                     <div class="advantage__text">
-                        <h3 class="advantage__title">Unlimites colors</h3>
-                        <p class="advantage__description">Sometimes the simplest things are the hardest to find. So we
+                        <h3 class="advantage__text-title">Unlimites colors</h3>
+                        <p class="advantage__text-description">Sometimes the simplest things are the hardest to find. So we
                             created a new line for everyday life</p>
                     </div>
                 </div>
             </div>
             <!-- -----------------------------------------------------------MAIN title 2----------------------------------------------------------- -->
-            <div class="title title2">
+            <div class="title title_widgets">
                 <h2 class="title__text">Simple widgets</h2>
                 <p class="title__subtitle">Drag and drop</p>
             </div>
@@ -111,7 +120,7 @@
                     <img src="images/left-arrow.png" alt="Left arrow">
                 </a>
                 <div class="widgets__card-block widgets__card-block--left">
-                    <div class="card left-grey-card">
+                    <div class="card card_grey-l">
                         <div class="card__left-side">
                             <div class="card__img">
                                 <img src="images/Cloudy.png" alt="Cloudy">
@@ -124,7 +133,7 @@
                             <span class="card__temperature">-10°</span>
                         </div>
                     </div>
-                    <div class="card left-green-card">
+                    <div class="card card_green">
                         <div class="card__left-side">
                             <div class="card__img">
                                 <img src="images/Sunny.png" alt="Sunny">
@@ -137,7 +146,7 @@
                             <span class="card__temperature">31°</span>
                         </div>
                     </div>
-                    <div class="card left-blue-card">
+                    <div class="card card_blue-l">
                         <div class="card__left-side">
                             <div class="card__img">
                                 <img src="images/Rainy.png" alt="Rainy">
@@ -150,13 +159,13 @@
                             <span class="card__temperature">9°</span>
                         </div>
                     </div>
-                    <div class="card empty-card">
+                    <div class="card card_empty">
                         <span class="card__add">+</span>
                     </div>
                     <span class="card-block__end">Add more widgets</span>
                 </div>
                 <div class="widgets__card-block widgets__card-block--central">
-                    <div class="card central-blue-card">
+                    <div class="card card_blue-c">
                         <div class="card__left-side">
                             <div class="card__img">
                                 <img src="images/Cloudy.png" alt="Cloudy">
@@ -169,7 +178,7 @@
                             <span class="card__temperature">-10°</span>
                         </div>
                     </div>
-                    <div class="card central-red-card">
+                    <div class="card card_red-c">
                         <div class="card__left-side">
                             <div class="card__img">
                                 <img src="images/Sunny.png" alt="Sunny">
@@ -182,7 +191,7 @@
                             <span class="card__temperature">31°</span>
                         </div>
                     </div>
-                    <div class="card central-grey-card">
+                    <div class="card card_grey-c">
                         <div class="card__left-side">
                             <div class="card__img">
                                 <img src="images/Rainy.png" alt="Rainy">
@@ -195,13 +204,13 @@
                             <span class="card__temperature">9°</span>
                         </div>
                     </div>
-                    <div class="card empty-card">
+                    <div class="card card_empty">
                         <span class="card__add">+</span>
                     </div>
                     <span class="card-block__end">Add more widgets</span>
                 </div>
                 <div class="widgets__card-block widgets__card-block--right">
-                    <div class="card right-purple-card">
+                    <div class="card card_purple">
                         <div class="card__left-side">
                             <div class="card__img">
                                 <img src="images/Cloudy.png" alt="Cloudy">
@@ -214,7 +223,7 @@
                             <span class="card__temperature">-10°</span>
                         </div>
                     </div>
-                    <div class="card right-yellow-card">
+                    <div class="card card_yellow">
                         <div class="card__left-side">
                             <div class="card__img">
                                 <img src="images/Sunny.png" alt="Sunny">
@@ -227,7 +236,7 @@
                             <span class="card__temperature">31°</span>
                         </div>
                     </div>
-                    <div class="card right-red-card">
+                    <div class="card card_red-r">
                         <div class="card__left-side">
                             <div class="card__img">
                                 <img src="images/Rainy.png" alt="Rainy">
@@ -240,7 +249,7 @@
                             <span class="card__temperature">9°</span>
                         </div>
                     </div>
-                    <div class="card empty-card">
+                    <div class="card card_empty">
                         <span class="card__add">+</span>
                     </div>
                     <span class="card-block__end">Add more widgets</span>
@@ -250,7 +259,7 @@
                 </a>
             </div>
             <!-- -----------------------------------------------------------MAIN title 3----------------------------------------------------------- -->
-            <div class="title title3">
+            <div class="title title_screenshots">
                 <h2 class="title__text">Screenshots</h2>
                 <p class="title__subtitle">The brightest images</p>
             </div>
@@ -327,7 +336,7 @@
                 </div>
             </div>
             <!-- -----------------------------------------------------------MAIN title 4----------------------------------------------------------- -->
-            <div class="title title4">
+            <div class="title title_rewiews">
                 <h2 class="title__text">What people are saying</h2>
                 <p class="title__subtitle">Rewiews</p>
             </div>
@@ -394,11 +403,32 @@
             </div>
         </div>
     </div>
-<!-- -----------------------------------------------------------FOOTER----------------------------------------------------------- -->
+    <!-- -----------------------------------------------------------FOOTER----------------------------------------------------------- -->
     <footer class="footer">
-
+        <div class="container">
+            <div class="footer__nav nav">
+                <div class="nav__logo nav__logo_dark">
+                    <a href="#"><span class="nav__logo-first-word nav__logo-first-word_dark">Fun</span> weather.</a>
+                </div>
+                <nav class="nav__block">
+                    <a class="nav__block-link nav__block-link_active" href="#">Home</a>
+                    <a class="nav__block-link nav__block-link_dark" href="#">Features</a>
+                    <a class="nav__block-link nav__block-link_dark" href="#">Reviews</a>
+                    <a class="nav__block-link nav__block-link_dark" href="#">Download</a>
+                </nav>
+                <div class="nav__social">
+                    <a href="#" class="nav__social-img nav__social-img_dark"><img src="images/social/facebook.png"
+                            alt="facebook"></a>
+                    <a href="#" class="nav__social-img nav__social-img_dark"><img src="images/social/instagram.png"
+                            alt="instagram"></a>
+                    <a href="#" class="nav__social-img nav__social-img_dark"><img src="images/social/twitter.png"
+                            alt="twitter"></a>
+                </div>
+            </div>
+            <span class="footer__rights">© 2016 All rights reserved. Weather App Theme by Gravpix</span>
+        </div>
+        <div class="footer__line"></div>
     </footer>
-
 </body>
 
 </html>
