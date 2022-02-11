@@ -11,7 +11,7 @@ body {
     width: 100%;
     max-width: 1170px;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 20px;
 }
 .button-up {
     position: fixed;
@@ -33,7 +33,7 @@ body {
     height: 100px;
 }
 .header__nav {
-    padding: 33px;
+    padding: 33px 0;
 }
 .nav, .nav__block, .nav__social {
     display: flex;
@@ -114,10 +114,11 @@ body {
     flex-direction: column;
     justify-content: center;
     row-gap: 40px;
-    flex: 0 1 47%;
+    flex: 0 1 44%;
+    min-width: 460px;
 }
 .intro__info-title {
-    font-size: 3.75rem;
+    font-size: 3.5rem;
     color: #fff;
     font-weight: bold;
 }
@@ -150,9 +151,11 @@ body {
 .intro__preview {
     position: relative;
     align-self: center;
-    flex: 0 1 53%;
+    flex: 0 1 47%;
     height: 600px;
     max-height: 100%;
+    min-width: 530px;
+    margin-left: auto;
 }
 .circle {
     display: flex;
@@ -164,7 +167,7 @@ body {
 }
 .intro__phone {
     position: absolute;
-    left: 20%;
+    left: 22%;
     max-height: 100%;
 }
 .intro__circle {
@@ -186,19 +189,19 @@ body {
 }
 .intro__circle_white {
     top: 12%;
-    left: 70%;
+    left: 79%;
     background-color: #fff;
     color: #4466c9;
     font-size: 1.25rem;
 }
 .intro__circle_blue {
     top: 45%;
-    left: 74%;
+    right: 0;
     background-color: #4466c9;
     color: #fff;
 }
 .intro__circle_yellow {
-    left: 73%;
+    left: 81%;
     bottom: -5%;
     background-color: #fcec64;
     color: #648cff;
@@ -212,8 +215,8 @@ body {
     height: 70px;
 }
 .intro__circle_button {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border: none;
     transform: rotate(-45deg);
     color: #ff5459;
@@ -252,15 +255,15 @@ body {
 /*---------------MAIN features---------------*/
 .features {
     display: flex;
-    align-items: center;
-    column-gap: 34px;
+    justify-content: space-between;
+    column-gap: 26px;
 }
 .advantage {
     display: flex;
+    column-gap: 14px;
 }
-.advantage__img {
-    flex-basis: 100%;
-    margin-right: -40px;
+.advantage__img img {
+    width: 200px;
 }
 .advantage__text {
     display: flex;
@@ -405,18 +408,21 @@ body {
     height: 550px;
     margin-bottom: 20%;
 }
-.screenshots__block--right {
+.screenshots__block_right {
     flex-direction: row-reverse;
 }
 .screen {
     position: relative;
     flex: 0 0 40%;
     height: 100%;
+    border: 1px solid #000;
+}
+.screen_right {
+    margin-right: 80px;
 }
 .screen__temperature {
     position: absolute;
     top: 375px;
-    left: 24px;
     z-index: 6;
     width: 90px;
     height: 90px;
@@ -424,13 +430,13 @@ body {
     font-size: 1.81rem;
     font-weight: bold;
 }
-.screen__temperature--blue {
+.screen__temperature_blue {
     background-color: #6ca3ff;
 }
-.screen__temperature--red {
+.screen__temperature_red {
     background-color: #fc6a42;
 }
-.screen__temperature--grey {
+.screen__temperature_grey {
     background-color: #7693c8;
 }
 .screen__weather {
@@ -444,13 +450,13 @@ body {
     font-size: 1.125rem;
     font-weight: bold;
 }
-.screen__weather--yellow {
+.screen__weather_yellow {
     background-color: #fcec64;
 }
-.screen__weather--orange {
+.screen__weather_orange {
     background-color: #f2a14e;
 }
-.screen__weather--lightblue {
+.screen__weather_lightblue {
     background-color: #b8faee;
 }
 .screen__back-weather {
@@ -462,18 +468,18 @@ body {
     font-size: 236px;
     font-weight: 300;
 }
-.screen__back-weather--cloudy {
+.screen__back-weather_cloudy {
     left: 24px;
 }
-.screen__back-weather--sunny {
+.screen__back-weather_sunny {
     left: 90px;
 }
-.screen__back-weather--rainy {
+.screen__back-weather_rainy {
     left: 120px;
 }
 .screen__img {
-    position: absolute;
-    left: 90px;
+    position: relative;
+    text-align: center;
     z-index: 5;
 }
 .descript {
@@ -483,6 +489,10 @@ body {
     row-gap: 40px;
     flex: 0 0 45%;
     height: 100%;
+    border: 1px solid #000;
+}
+.descript_right {
+    margin-left: 40px;
 }
 .descript__title {
     color: #648cff;
@@ -505,13 +515,13 @@ body {
     color: #c3cfe5;
     text-transform: none;
 }
-.descript__circle--top {
+.descript__circle_top {
     z-index: 5;
 }
-.descript__circle--center {
+.descript__circle_center {
     z-index: 4;
 }
-.descript__circle--down {
+.descript__circle_down {
     z-index: 3;
 }
 
@@ -521,6 +531,7 @@ body {
     flex-wrap: wrap;
     column-gap: 4%;
     row-gap: 30px;
+    margin-bottom: 10%;
 }
 .rewiew {
     display: flex;
@@ -550,9 +561,9 @@ body {
 .download {
     background-color: #648cff;
 }
-.download__inner {
+.download__container {
     display: flex;
-    height: 50vh;
+    height: 60vh;
 }
 .download__description {
     display: flex;
@@ -582,14 +593,14 @@ body {
     height: 100%;
     overflow: hidden;
 }
-.download__img--front {
+.download__img_front {
     position: absolute;
     top: 15%;
     left: 50%;
     z-index: 5;
     transform: translateX(-50%);
 }
-.download__img--back-left {
+.download__img_back-left {
     position: absolute;
     top: 32%;
     left: 0;
@@ -597,7 +608,7 @@ body {
     margin: 0 10px;
     filter: blur(5px);
 }
-.download__img--back-right {
+.download__img_back-right {
     position: absolute;
     top: 32%;
     right: 0;
@@ -609,15 +620,15 @@ body {
 /*---------------------------------FOOTER---------------------------------*/
 .footer {
     position: relative;
-    height: 50vh;
+    height: 40vh;
     background-color: #353854;
 }
 .footer__nav {
-    padding: 100px 0;
+    padding: 90px 0;
 }
 .footer__line {
     position: absolute;
-    top: 230px;
+    top: 200px;
     left: 50%;
     width: 90%;
     height: 2px;
@@ -626,7 +637,7 @@ body {
 }
 .footer__rights {
     display: block;
-    margin-top: 50px;
+    margin-top: 30px;
     text-align: right;
     color: #434769;
 }
