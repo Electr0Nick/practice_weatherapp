@@ -1,4 +1,23 @@
-/*---------------------------------MEDIA---------------------------------*/
+@media (min-width:1540px) {
+    /*---------------------------------INTRO---------------------------------*/
+    .intro__background {
+        height: 970px;
+    }
+    .intro__container {
+        height: 800px;
+    }
+    /*---------------------------------DOWNLOAD---------------------------------*/
+    .download__container {
+        height: 450px;
+    }
+    /*---------------------------------FOOTER---------------------------------*/
+    .footer {
+        height: 300px;
+    }
+}
+
+
+
 @media (max-width:1020px) {
     /*---------------------------------HEADER---------------------------------*/
     .nav__social {
@@ -17,7 +36,7 @@
     /*---------------INTRO top side---------------*/
     .intro__info {
         align-items: center;
-        flex: 0 1 45%;
+        flex: 0 0 16%;
         max-width: 460px;
     }
     .intro__info-title {
@@ -27,9 +46,10 @@
         text-align: center;
     }
     /*---------------INTRO down side---------------*/
-    .intro__preview {
-        margin-left: 0;
+    .prewiew {
+        width: 60%;
     }
+
     /*---------------MAIN features---------------*/
     .features {
         column-gap: 50px;
