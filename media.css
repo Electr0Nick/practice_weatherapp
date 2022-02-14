@@ -1,10 +1,10 @@
 @media (min-width:1540px) {
     /*---------------------------------INTRO---------------------------------*/
     .intro__background {
-        height: 970px;
+        height: 940px;
     }
     .intro__container {
-        height: 800px;
+        height: 770px;
     }
     /*---------------------------------DOWNLOAD---------------------------------*/
     .download__container {
@@ -25,18 +25,18 @@
     }
     /*---------------------------------INTRO---------------------------------*/
     .intro__background {
-        height: 220vh;
-        border-radius: 0 0 50% 50% / 0 0 7% 7%;
+        height: 1410px;
+        border-radius: 0 0 50% 50% / 0 0 5% 5%;
     }
     .intro__container {
         flex-direction: column;
-        align-items: center;
-        height: calc(195vh);
+        justify-content: space-evenly;
+        height: 1220px;
     }
     /*---------------INTRO top side---------------*/
     .intro__info {
         align-items: center;
-        flex: 0 0 16%;
+        flex: 0 0 30%;
         max-width: 460px;
     }
     .intro__info-title {
@@ -47,7 +47,8 @@
     }
     /*---------------INTRO down side---------------*/
     .prewiew {
-        width: 60%;
+        width: 80%;
+        flex: none;
     }
 
     /*---------------MAIN features---------------*/
@@ -71,9 +72,11 @@
     /*---------------MAIN screenshots---------------*/
     .screenshots__block {
         flex-direction: column-reverse;
+        align-items: center;
+        row-gap: 100px;
     }
     .screen {
-        
+        width: 80%;
     }
     .descript {
         align-items: center;
@@ -82,11 +85,11 @@
         margin-left: 0;
     }
     .descript__title {
-        font-size: 1.8rem;
+        font-size: 1.9rem;
     }
     .descript__text {
         width: 80%;
         text-align: center;
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
 }
