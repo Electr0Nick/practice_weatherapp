@@ -11,19 +11,20 @@
     <link rel="stylesheet" type="text/css" href="media.css">
 </head>
 
-<body>
+<body id="home">
     <!-- -----------------------------------------------------------HEADER---------------------------------------------------------- -->
     <header class="header">
         <div class="container">
-            <div class="header__nav nav" id="top">
+            <div class="header__nav nav">
+                <div class="nav__burger"><span></span></div>
                 <div class="nav__logo">
                     <a href="#"><span class="nav__logo-first-word">Fun</span> weather.</a>
                 </div>
                 <nav class="nav__block">
-                    <a class="nav__block-link nav__block-link_active" href="#">Home</a>
-                    <a class="nav__block-link" href="#">Features</a>
-                    <a class="nav__block-link" href="#">Reviews</a>
-                    <a class="nav__block-link" href="#">Download</a>
+                    <a class="nav__block-link" href="#home">Home</a>
+                    <a class="nav__block-link" href="#features">Features</a>
+                    <a class="nav__block-link" href="#reviews">Reviews</a>
+                    <a class="nav__block-link" href="#download">Download</a>
                 </nav>
                 <div class="nav__social">
                     <a href="#" class="nav__social-img"><img src="images/social/facebook.png" alt="facebook"></a>
@@ -70,14 +71,14 @@
         </div>
     </div>
     <!-- -----------------------------------------------------------BUTTON-UP----------------------------------------------------------- -->
-    <a href="#top">
+    <a href="#home">
         <div class="button-up"><img src="images/arrow.png" alt="arrow"></div>
     </a>
     <!-- -----------------------------------------------------------MAIN----------------------------------------------------------- -->
     <main class="main">
         <div class="container">
             <!-- -----------------------------------------------------------MAIN title 1----------------------------------------------------------- -->
-            <div class="title title_features">
+            <div class="title title_features" id="features">
                 <h2 class="title__text">Perfect features</h2>
                 <p class="title__subtitle">Only necessary</p>
             </div>
@@ -351,7 +352,7 @@
                 </div>
             </div>
             <!-- -----------------------------------------------------------MAIN title 4----------------------------------------------------------- -->
-            <div class="title title_rewiews">
+            <div class="title title_rewiews" id="reviews">
                 <h2 class="title__text">What people are saying</h2>
                 <p class="title__subtitle">Rewiews</p>
             </div>
@@ -387,7 +388,7 @@
         </div>
     </main>
     <!-- -----------------------------------------------------------DOWNLOAD----------------------------------------------------------- -->
-    <div class="download">
+    <div class="download" id="download">
         <div class="container">
             <div class="download__container">
                 <div class="download__description">

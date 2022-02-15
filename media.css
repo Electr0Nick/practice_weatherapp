@@ -50,7 +50,6 @@
         width: 80%;
         flex: none;
     }
-
     /*---------------MAIN features---------------*/
     .features {
         column-gap: 50px;
@@ -69,27 +68,191 @@
     .advantage__text-description {
         text-align: center;
     }
+    /*---------------MAIN widgets---------------*/
+    .widgets__card-block--left {
+        left: 8%;
+    }
+    .widgets__card-block--right {
+        right: 8%;
+    }
     /*---------------MAIN screenshots---------------*/
     .screenshots__block {
-        flex-direction: column-reverse;
+        flex-direction: column;
         align-items: center;
-        row-gap: 100px;
+        row-gap: 30px;
     }
     .screen {
         width: 80%;
+        margin: 40px 0 0 10%;
     }
     .descript {
         align-items: center;
     }
-    .descript_right {
-        margin-left: 0;
-    }
     .descript__title {
+        text-align: center;
         font-size: 1.9rem;
     }
     .descript__text {
         width: 80%;
         text-align: center;
         font-size: 1.3rem;
+    }
+    /*---------------MAIN reviews---------------*/
+    .rewiews-block {
+        flex-direction: column;
+        row-gap: 0;
+        align-items: center;
+    }
+    .rewiew {
+        width: 90%;
+    }
+    /*---------------------------------DOWNLOAD---------------------------------*/
+    .download__container {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .download__description {
+        flex: none;
+    }
+    .download__mobiles {
+        flex: none;
+        width: 80%;
+    }
+}
+
+
+
+@media (max-width:760px) {
+    /*---------------------------------HEADER---------------------------------*/
+    .nav {
+        height: 60px;
+    }
+    .nav__burger {
+        display: block;
+    }
+    .nav__block,
+    .nav__social {
+    display: none;
+    }
+    .intro__background {
+        height: 1130px;
+        border-radius: 0 0 50% 50% / 0 0 3% 3%;
+    }
+    /*---------------------------------INTRO---------------------------------*/
+    .intro__container {
+        height: 1000px;
+    }
+    /*---------------INTRO top side---------------*/
+    .intro__info {
+        min-width: 300px;
+        row-gap: 26px;
+    }
+    .intro__info-title {
+        font-size: 2.8rem;
+    }
+    .intro__control {
+        flex-direction: column;
+        row-gap: 16px;
+    }
+    /*---------------INTRO down side---------------*/
+    .prewiew {
+        width: 100%;
+    }
+    /*---------------------------------MAIN---------------------------------*/
+    .title__text {
+        font-size: 2rem;
+    }
+    /*---------------MAIN features---------------*/
+    .features {
+        flex-direction: column;
+        row-gap: 16px;
+    }
+    /*---------------MAIN widgets---------------*/
+    .widgets__arrow {
+        transform: scale(0.8);
+    }
+    .widgets__arrow--left {
+        left: 0;
+    }
+    .widgets__arrow--right {
+        right: 0;
+    }
+    .widgets__card-block {
+        transform: scale(0.8);
+    }
+    .widgets__card-block--left {
+        left: 3%;
+        transform: scale(0.6);
+    }
+    .widgets__card-block--right {
+        right: 3%;
+        transform: scale(0.6);
+    }
+    /*---------------MAIN screenshots---------------*/
+    .descript__title {
+        font-size: 1.6rem;
+    }
+    .descript__text {
+        width: 80%;
+        text-align: center;
+        font-size: 1rem;
+    }
+    /*---------------MAIN reviews---------------*/
+    .rewiew__open {
+        font-size: 7rem;
+        margin-bottom: -80px;
+    }
+    .rewiew__text {
+        font-size: 1rem;
+    }
+    .rewiew__author {
+        font-size: 0.8rem;
+    }
+    .rewiew__close {
+        font-size: 7rem;
+        margin-top: -90px;
+    }
+    /*---------------------------------DOWNLOAD---------------------------------*/
+    .download__description {
+        margin-top: 24px;
+        row-gap: 24px;
+    }
+    .download__title {
+        font-size: 1.6rem;
+    }
+    .download__text {
+        font-size: 0.8rem;
+    }
+    /*---------------------------------FOOTER---------------------------------*/
+    .footer__nav {
+        padding: 80px 0;
+    }
+    .footer__line {
+        top: 160px;
+    }
+    .footer__rights {
+        margin-top: 30px;
+        font-size: 0.7rem;
+    }
+}
+
+
+
+@media (max-width:600px) {
+        /*---------------MAIN widgets---------------*/
+        .widgets__card-block--left {
+            display: none;
+        }
+        .widgets__card-block--right {
+            display: none;
+        }
+}
+
+
+
+@media (max-width:430px) {
+    /*---------------MAIN widgets---------------*/
+    .widgets__arrow {
+        display: none;
     }
 }
