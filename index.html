@@ -12,29 +12,29 @@
 </head>
 
 <body id="home">
-    <!-- -----------------------------------------------------------HEADER---------------------------------------------------------- -->
+    <!-- _________________________________________________________HEADER_________________________________________________________ -->
     <header class="header">
         <div class="container">
-            <div class="header__nav nav">
+            <nav class="header__nav nav">
                 <div class="nav__burger"><span></span></div>
                 <div class="nav__logo">
                     <a href="#"><span class="nav__logo-first-word">Fun</span> weather.</a>
                 </div>
-                <nav class="nav__block">
-                    <a class="nav__block-link" href="#home">Home</a>
-                    <a class="nav__block-link" href="#features">Features</a>
-                    <a class="nav__block-link" href="#reviews">Reviews</a>
-                    <a class="nav__block-link" href="#download">Download</a>
-                </nav>
+                <ul class="nav__block">
+                    <li class="nav__block-link"><a href="#home">Home</a></li>
+                    <li class="nav__block-link"><a href="#features">Features</a></li>
+                    <li class="nav__block-link"><a href="#reviews">Rewiews</a></li>
+                    <li class="nav__block-link"><a href="#download">Download</a></li>
+                </ul>
                 <div class="nav__social">
                     <a href="#" class="nav__social-img"><img src="images/social/facebook.png" alt="facebook"></a>
                     <a href="#" class="nav__social-img"><img src="images/social/instagram.png" alt="instagram"></a>
                     <a href="#" class="nav__social-img"><img src="images/social/twitter.png" alt="twitter"></a>
                 </div>
-            </div>
+            </nav>
         </div>
     </header>
-    <!-- -----------------------------------------------------------INTRO----------------------------------------------------------- -->
+    <!-- _________________________________________________________INTRO_________________________________________________________ -->
     <div class="intro">
         <div class="intro__background">
             <div class="intro__wave">
@@ -66,23 +66,23 @@
                 </div>
             </div>
             <div class="intro__end">
-                <button class="intro__circle intro__circle_button circle">&#8735</button>
+                <button class="intro__circle intro__circle_button circle">&#8735;</button>
             </div>
         </div>
     </div>
-    <!-- -----------------------------------------------------------BUTTON-UP----------------------------------------------------------- -->
+    <!-- _________________________________________________________BUTTON-UP_________________________________________________________ -->
     <a href="#home">
         <div class="button-up"><img src="images/arrow.png" alt="arrow"></div>
     </a>
-    <!-- -----------------------------------------------------------MAIN----------------------------------------------------------- -->
+    <!-- _________________________________________________________MAIN_________________________________________________________ -->
     <main class="main">
         <div class="container">
-            <!-- -----------------------------------------------------------MAIN title 1----------------------------------------------------------- -->
+            <!-- _________________________________________________________MAIN title 1_________________________________________________________ -->
             <div class="title title_features" id="features">
                 <h2 class="title__text">Perfect features</h2>
                 <p class="title__subtitle">Only necessary</p>
             </div>
-            <!-- -----------------------------------------------------------MAIN features----------------------------------------------------------- -->
+            <!-- _________________________________________________________MAIN features_________________________________________________________ -->
             <div class="features">
                 <div class="advantage">
                     <div class="advantage__img">
@@ -118,12 +118,12 @@
                     </div>
                 </div>
             </div>
-            <!-- -----------------------------------------------------------MAIN title 2----------------------------------------------------------- -->
+            <!-- _________________________________________________________MAIN title 2_________________________________________________________ -->
             <div class="title title_widgets">
                 <h2 class="title__text">Simple widgets</h2>
                 <p class="title__subtitle">Drag and drop</p>
             </div>
-            <!-- -----------------------------------------------------------MAIN widgets----------------------------------------------------------- -->
+            <!-- _________________________________________________________MAIN widgets_________________________________________________________ -->
             <div class="widgets">
                 <a class="widgets__arrow widgets__arrow--left" href="#">
                     <img src="images/widgets/left-arrow.png" alt="Left arrow">
@@ -267,12 +267,12 @@
                     <img src="images/widgets/right-arrow.png" alt="Right arrow">
                 </a>
             </div>
-            <!-- -----------------------------------------------------------MAIN title 3----------------------------------------------------------- -->
+            <!-- _________________________________________________________MAIN title 3_________________________________________________________ -->
             <div class="title title_screenshots">
                 <h2 class="title__text">Screenshots</h2>
                 <p class="title__subtitle">The brightest images</p>
             </div>
-            <!-- -----------------------------------------------------------MAIN screenshots----------------------------------------------------------- -->
+            <!-- _________________________________________________________MAIN screenshots_________________________________________________________ -->
             <div class="screenshots">
                 <div class="screenshots__block">
                     <div class="screenshots__screen screen">
@@ -351,12 +351,12 @@
                     </div>
                 </div>
             </div>
-            <!-- -----------------------------------------------------------MAIN title 4----------------------------------------------------------- -->
+            <!-- _________________________________________________________MAIN title 4_________________________________________________________ -->
             <div class="title title_rewiews" id="reviews">
                 <h2 class="title__text">What people are saying</h2>
                 <p class="title__subtitle">Rewiews</p>
             </div>
-            <!-- -----------------------------------------------------------MAIN rewiews---------------------------------------------------------- -->
+            <!-- _________________________________________________________MAIN rewiews_________________________________________________________ -->
             <div class="rewiews-block">
                 <div class="rewiew">
                     <span class="rewiew__open">“</span>
@@ -387,7 +387,7 @@
             </div>
         </div>
     </main>
-    <!-- -----------------------------------------------------------DOWNLOAD----------------------------------------------------------- -->
+    <!-- _________________________________________________________DOWNLOAD_________________________________________________________ -->
     <div class="download" id="download">
         <div class="container">
             <div class="download__container">
@@ -396,11 +396,11 @@
                     <p class="download__text">Just download the app from the store.
                         Simple, nice and user-friendly application of theweather. Only relevant and useful information.
                     </p>
-                    <div class="download__buttons">
-                        <a href="#">
+                    <div class="download__buttons-block">
+                        <a class="download__button" href="#">
                             <img src="images/download/appstore.png" alt="appstore">
                         </a>
-                        <a href="#">
+                        <a class="download__button" href="#">
                             <img src="images/download/google-play.png" alt="google-play">
                         </a>
                     </div>
@@ -420,19 +420,19 @@
             </div>
         </div>
     </div>
-    <!-- -----------------------------------------------------------FOOTER----------------------------------------------------------- -->
+    <!-- _________________________________________________________FOOTER_________________________________________________________ -->
     <footer class="footer">
         <div class="container">
-            <div class="footer__nav nav">
+            <nav class="footer__nav nav">
                 <div class="nav__logo nav__logo_dark">
                     <a href="#"><span class="nav__logo-first-word nav__logo-first-word_dark">Fun</span> weather.</a>
                 </div>
-                <nav class="nav__block">
-                    <a class="nav__block-link nav__block-link_active" href="#">Home</a>
-                    <a class="nav__block-link nav__block-link_dark" href="#">Features</a>
-                    <a class="nav__block-link nav__block-link_dark" href="#">Reviews</a>
-                    <a class="nav__block-link nav__block-link_dark" href="#">Download</a>
-                </nav>
+                <ul class="nav__block">
+                    <li class="nav__block-link nav__block-link_dark"><a href="#home">Home</a></li>
+                    <li class="nav__block-link nav__block-link_dark"><a href="#features">Features</a></li>
+                    <li class="nav__block-link nav__block-link_dark"><a href="#reviews">Rewiews</a></li>
+                    <li class="nav__block-link nav__block-link_dark"><a href="#download">Download</a></li>
+                </ul>
                 <div class="nav__social">
                     <a href="#" class="nav__social-img nav__social-img_dark"><img src="images/social/facebook.png"
                             alt="facebook"></a>
@@ -441,7 +441,7 @@
                     <a href="#" class="nav__social-img nav__social-img_dark"><img src="images/social/twitter.png"
                             alt="twitter"></a>
                 </div>
-            </div>
+            </nav>
             <span class="footer__rights">© 2016 All rights reserved. Weather App Theme by Gravpix</span>
         </div>
         <div class="footer__line"></div>

@@ -1,16 +1,16 @@
 @media (min-width:1540px) {
-    /*---------------------------------INTRO---------------------------------*/
+    /*__________________________________INTRO__________________________________*/
     .intro__background {
         height: 940px;
     }
     .intro__container {
         height: 770px;
     }
-    /*---------------------------------DOWNLOAD---------------------------------*/
+    /*__________________________________DOWNLOAD__________________________________*/
     .download__container {
         height: 450px;
     }
-    /*---------------------------------FOOTER---------------------------------*/
+    /*__________________________________FOOTER__________________________________*/
     .footer {
         height: 300px;
     }
@@ -19,11 +19,11 @@
 
 
 @media (max-width:1020px) {
-    /*---------------------------------HEADER---------------------------------*/
+    /*__________________________________HEADER__________________________________*/
     .nav__social {
         width: 12%;
     }
-    /*---------------------------------INTRO---------------------------------*/
+    /*__________________________________INTRO__________________________________*/
     .intro__background {
         height: 1410px;
         border-radius: 0 0 50% 50% / 0 0 5% 5%;
@@ -33,49 +33,45 @@
         justify-content: space-evenly;
         height: 1220px;
     }
-    /*---------------INTRO top side---------------*/
+    /*___________________INTRO top side___________________*/
     .intro__info {
         align-items: center;
         flex: 0 0 30%;
         max-width: 460px;
     }
-    .intro__info-title {
-        text-align: center;
-    }
+    .intro__info-title,
     .intro__info-text {
         text-align: center;
     }
-    /*---------------INTRO down side---------------*/
+    /*___________________INTRO down side___________________*/
     .prewiew {
         width: 80%;
         flex: none;
     }
-    /*---------------MAIN features---------------*/
+    /*___________________MAIN features___________________*/
     .features {
         column-gap: 50px;
     }
     .advantage {
         flex-direction: column;
-        align-items: center;
         row-gap: 20px;
+    }
+    .advantage,
+    .advantage__text,
+    .advantage__text-description {
+        align-items: center;
     }
     .advantage__img img {
         width: 100px;
     }
-    .advantage__text {
-        align-items: center;
-    }
-    .advantage__text-description {
-        text-align: center;
-    }
-    /*---------------MAIN widgets---------------*/
+    /*___________________MAIN widgets___________________*/
     .widgets__card-block--left {
         left: 8%;
     }
     .widgets__card-block--right {
         right: 8%;
     }
-    /*---------------MAIN screenshots---------------*/
+    /*___________________MAIN screenshots___________________*/
     .screenshots__block {
         flex-direction: column;
         align-items: center;
@@ -97,7 +93,7 @@
         text-align: center;
         font-size: 1.3rem;
     }
-    /*---------------MAIN reviews---------------*/
+    /*___________________MAIN reviews___________________*/
     .rewiews-block {
         flex-direction: column;
         row-gap: 0;
@@ -106,7 +102,7 @@
     .rewiew {
         width: 90%;
     }
-    /*---------------------------------DOWNLOAD---------------------------------*/
+    /*__________________________________DOWNLOAD__________________________________*/
     .download__container {
         flex-direction: column;
         justify-content: space-between;
@@ -123,7 +119,7 @@
 
 
 @media (max-width:760px) {
-    /*---------------------------------HEADER---------------------------------*/
+    /*__________________________________HEADER__________________________________*/
     .nav {
         height: 60px;
     }
@@ -138,11 +134,11 @@
         height: 1130px;
         border-radius: 0 0 50% 50% / 0 0 3% 3%;
     }
-    /*---------------------------------INTRO---------------------------------*/
+    /*__________________________________INTRO__________________________________*/
     .intro__container {
         height: 1000px;
     }
-    /*---------------INTRO top side---------------*/
+    /*___________________INTRO top side___________________*/
     .intro__info {
         min-width: 300px;
         row-gap: 26px;
@@ -154,20 +150,18 @@
         flex-direction: column;
         row-gap: 16px;
     }
-    /*---------------INTRO down side---------------*/
+    /*___________________INTRO down side___________________*/
     .prewiew {
         width: 100%;
     }
-    /*---------------------------------MAIN---------------------------------*/
+    /*__________________________________MAIN__________________________________*/
     .title__text {
         font-size: 2rem;
     }
-    /*---------------MAIN features---------------*/
-    .features {
-        flex-direction: column;
-        row-gap: 16px;
+    /*___________________MAIN widgets___________________*/
+    .widgets {
+        height: 580px;
     }
-    /*---------------MAIN widgets---------------*/
     .widgets__arrow {
         transform: scale(0.8);
     }
@@ -179,16 +173,19 @@
     }
     .widgets__card-block {
         transform: scale(0.8);
+        transform-origin: top;
     }
     .widgets__card-block--left {
         left: 3%;
         transform: scale(0.6);
+        transform-origin: 40% 20%;
     }
     .widgets__card-block--right {
         right: 3%;
         transform: scale(0.6);
+        transform-origin: 60% 20%;
     }
-    /*---------------MAIN screenshots---------------*/
+    /*___________________MAIN screenshots___________________*/
     .descript__title {
         font-size: 1.6rem;
     }
@@ -197,7 +194,7 @@
         text-align: center;
         font-size: 1rem;
     }
-    /*---------------MAIN reviews---------------*/
+    /*___________________MAIN reviews___________________*/
     .rewiew__open {
         font-size: 7rem;
         margin-bottom: -80px;
@@ -212,7 +209,7 @@
         font-size: 7rem;
         margin-top: -90px;
     }
-    /*---------------------------------DOWNLOAD---------------------------------*/
+    /*__________________________________DOWNLOAD__________________________________*/
     .download__description {
         margin-top: 24px;
         row-gap: 24px;
@@ -223,7 +220,7 @@
     .download__text {
         font-size: 0.8rem;
     }
-    /*---------------------------------FOOTER---------------------------------*/
+    /*__________________________________FOOTER__________________________________*/
     .footer__nav {
         padding: 80px 0;
     }
@@ -239,19 +236,25 @@
 
 
 @media (max-width:600px) {
-        /*---------------MAIN widgets---------------*/
-        .widgets__card-block--left {
-            display: none;
-        }
-        .widgets__card-block--right {
-            display: none;
-        }
+    /*___________________MAIN features___________________*/
+    .features {
+        flex-direction: column;
+        row-gap: 16px;
+    }
+    /*___________________MAIN widgets___________________*/
+    .widgets__card-block--left,
+    .widgets__card-block--right {
+        display: none;
+    }
 }
-
-
-
+    
+    
+    
 @media (max-width:430px) {
-    /*---------------MAIN widgets---------------*/
+    /*___________________MAIN widgets___________________*/
+    .widgets__card-block {
+        transform: scale(0.75);
+    }
     .widgets__arrow {
         display: none;
     }

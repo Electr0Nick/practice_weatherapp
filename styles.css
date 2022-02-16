@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Ubuntu:300,300italic,regular,italic,500,500italic,700,700italic);
 
-/*---------------------------------BODY---------------------------------*/
+/*__________________________________BODY__________________________________*/
 body {
     position: relative;
     width: 100%;
@@ -26,13 +26,10 @@ body {
     background-color:  rgba(174, 177, 212, 0.2);
 }
 
-/*---------------------------------HEADER---------------------------------*/
+/*__________________________________HEADER__________________________________*/
 .header {
     z-index: 20;
     width: 100%;
-}
-.header__nav {
-    /* padding: 33px 0; */
 }
 .nav, .nav__block, .nav__social {
     display: flex;
@@ -80,7 +77,7 @@ body {
     color: #648cff;
 }
 .nav__logo-first-word {
-    font-weight: bold;
+    font-weight: inherit;
 }
 .nav__logo-first-word_dark {
     color: #fc6a42;
@@ -91,6 +88,10 @@ body {
 .nav__block-link {
     color: #e1e1e1;
     font-size: 1.125rem;
+    transition: 200ms;
+}
+.nav__block-link:hover {
+    transform: scale(1.1);
 }
 .nav__block-link_dark {
     color: #b5b5c8;
@@ -98,11 +99,17 @@ body {
 .nav__social {
     width: 10%;
 }
+.nav__social-img {
+    transition: 200ms;
+}
+.nav__social-img:hover {
+    transform: scale(1.15);
+}
 .nav__social-img_dark {
     filter: brightness(65%);
 }
 
-/*---------------------------------INTRO---------------------------------*/
+/*__________________________________INTRO__________________________________*/
 .intro__background {
     position: absolute;
     top: 0;
@@ -132,7 +139,7 @@ body {
     height: calc(100vh - 170px);
 }
 
-/*---------------INTRO left side---------------*/
+/*___________________INTRO left side___________________*/
 .intro__info {
     display: flex;
     flex-direction: column;
@@ -164,6 +171,10 @@ body {
     color: #fff;
     font-size: 1.125rem;
     font-weight: bold;
+    transition: 200ms;
+}
+.intro__button:hover {
+    transform: scale(1.05);
 }
 .intro__button_red {
     background-color: #fc6a42;
@@ -172,7 +183,7 @@ body {
     background-color: #4466c9;
 }
 
-/*---------------INTRO right side---------------*/
+/*___________________INTRO right side___________________*/
 .intro__preview {
     flex: 0 0 47%;
 }
@@ -185,60 +196,66 @@ body {
     width: 100%;
     padding-bottom: 110%;
 }
-.prewiew__content {
+.prewiew__content,
+.prewiew__weather,
+.prewiew__temperature,
+.prewiew__town-1,
+.prewiew__town-2,
+.prewiew__phone {
     position: absolute;
+}
+.prewiew__content {
     width: 100%;
     height: 100%;
 }
 .prewiew__weather {
-    position: absolute;
     top: 47%;
     width: 17%;
 }
 .prewiew__temperature {
-    position: absolute;
     top: 13%;
     left: 81%;
     width: 11%;
 }
 .prewiew__town-1 {
-    position: absolute;
     top: 42%;
     left: 86%;
     width: 17%;
 }
 .prewiew__town-2 {
-    position: absolute;
     top: 94%;
     left: 82%;
     width: 10%;
 }
 .prewiew__phone {
-    position: absolute;
     left: 25%;
     width: 52%;
 }
 
-/*---------------INTRO end---------------*/
-.intro__end {
+/*___________________INTRO end___________________*/
+.intro__end,
+.intro__circle_button {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.intro__end {
     height: 70px;
 }
 .intro__circle_button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     border-radius: 50%;
     width: 40px;
     height: 40px;
     border: none;
     transform: rotate(-45deg);
     color: #ff5459;
+    transition: 200ms;
+}
+.intro__circle_button:hover {
+    transform: rotate(-405deg) scale(1.1);
 }
 
-/*---------------------------------MAIN---------------------------------*/
+/*__________________________________MAIN__________________________________*/
 .title {
     display: flex;
     flex-direction: column;
@@ -269,7 +286,7 @@ body {
     margin: 20% 0 7%;
 }
 
-/*---------------MAIN features---------------*/
+/*___________________MAIN features___________________*/
 .features {
     display: flex;
     justify-content: space-between;
@@ -286,6 +303,7 @@ body {
     display: flex;
     flex-direction: column;
     row-gap: 20px;
+    text-align: center;
 }
 .advantage__text-title {
     font-size: 1.5rem;
@@ -296,7 +314,7 @@ body {
     line-height: 2.2rem;
 }
 
-/*---------------MAIN widgets---------------*/
+/*___________________MAIN widgets___________________*/
 .widgets {
     position: relative;
     width: 100%;
@@ -324,8 +342,8 @@ body {
 }
 .widgets__card-block--central {
     position: absolute;
-    left: 0;
-    right: 0;
+    left: -9999px;
+    right: -9999px;
     z-index: 10;
     margin: 0 auto;
 }
@@ -418,7 +436,7 @@ body {
     font-size: 0.5rem;
 }
 
-/*---------------MAIN screenshots---------------*/
+/*___________________MAIN screenshots___________________*/
 .screenshots__block {
     display: flex;
     justify-content: space-between;
@@ -427,7 +445,7 @@ body {
 .screenshots__block_right {
     flex-direction: row-reverse;
 }
-/*---------------MAIN screenshots left side---------------*/
+/*___________________MAIN screenshots left side___________________*/
 .screenshots__screen {
     flex: 0 0 45%;;
 }
@@ -475,7 +493,7 @@ body {
     left: 48%;
 }
 
-/*---------------MAIN screenshots right side---------------*/
+/*___________________MAIN screenshots right side___________________*/
 .screenshots__description {
     flex: 0 0 45%;
     align-self: center;
@@ -521,7 +539,7 @@ body {
     z-index: 3;
 }
 
-/*---------------MAIN reviews---------------*/
+/*___________________MAIN reviews___________________*/
 .rewiews-block {
     display: flex;
     flex-wrap: wrap;
@@ -553,7 +571,7 @@ body {
     margin-top: -110px;
 }
 
-/*---------------------------------DOWNLOAD---------------------------------*/
+/*__________________________________DOWNLOAD__________________________________*/
 .download {
     background-color: #648cff;
 }
@@ -579,9 +597,15 @@ body {
     color: #fff;
     font-size: 1.125rem;
 }
-.download__buttons {
+.download__buttons-block {
     display: flex;
     column-gap: 10px;
+}
+.download__button {
+    transition: 200ms;
+}
+.download__button:hover {
+    transform: scale(1.05);
 }
 .download__mobiles {
     flex: 0 0 64%;
@@ -623,7 +647,7 @@ body {
     filter: blur(5px);
 }
 
-/*---------------------------------FOOTER---------------------------------*/
+/*__________________________________FOOTER__________________________________*/
 .footer {
     position: relative;
     z-index: 20;
@@ -647,24 +671,4 @@ body {
     margin-top: 30px;
     text-align: right;
     color: #434769;
-}
-
-
-
-
-
-
-
-.header,
-.intro__info,
-.prewiew,
-.intro__end,
-.title,
-.title__text,
-.widgets,
-.screen,
-.descript,
-.download__description,
-.mobiles {
-    border: 1px solid #000;
 }
